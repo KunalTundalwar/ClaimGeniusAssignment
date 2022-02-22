@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="instances">
+  <test thread-count="2" name="PARA2(failed)" parallel="instances">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="seleniumPreparation.PARAMETERANNOTATION">
+        <methods>
+          <include name="doit"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- seleniumPreparation.PARAMETERANNOTATION -->
+    </classes>
+  </test> <!-- PARA2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
